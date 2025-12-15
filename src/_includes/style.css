@@ -189,7 +189,7 @@ hr {
 
 hr::after {
   background: var(--bg);
-  content: '§';
+  content: 'λ';
   padding: 0 4px;
   position: relative;
   top: -13px;
