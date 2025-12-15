@@ -81,6 +81,10 @@ module.exports = function (eleventyConfig) {
         return [...tagsSet].sort();
     });
 
+    // passthrough copy for favicons
+    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "favicons" });
+    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons/favicon.ico": "favicon.ico" });
+
     // build io directories
     return {
         dir: {

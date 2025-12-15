@@ -5,9 +5,9 @@ eleventyNavigation:
   key: Home
 ---
 
-# Recently Posted
+# Recent Articles
 
-{% assign latest_six = collections.posts %}
-{% for post in latest_six limit:100 %}
+{% assign latest_posts = collections.posts %}
+{% for post in latest_posts limit:100 %}
     - [{{ post.data.title }}]({{ post.url }}) posted on {{ post.data.date | htmlDateString }}
 {% endfor %}
