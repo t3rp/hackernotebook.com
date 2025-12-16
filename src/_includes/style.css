@@ -63,7 +63,12 @@ header h1 {
   text-transform: lowercase;
   font-size: 3rem;
   overflow-wrap: break-word;
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   color: var(--text);
 }
 
@@ -169,11 +174,8 @@ h4 {
 :is(h1, h2, h3, h4, h5, h6) {
   line-height: 1em;
   text-transform: capitalize;
-}
-
-:is(h1, h2, h3, h4, h5, h6):not(:first-child) {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Horizontal Rulers */

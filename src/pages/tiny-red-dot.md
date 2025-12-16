@@ -1,11 +1,8 @@
 ---
-title: The Little Red, Blue, or Purple Dot
-eleventyNavigation:
-    key: Dots
-    hide: true
+title: Red, Blue, or Purple Dot
 ---
 
-The small red, blue, or purple dot (lambda) ajacent to the title is calculated by the following Python program. It counts the number of posts with red (offensive/attacker) and blue (defensive/defender) tags. The respective tag percentages are then used to calculate an RGB value for the dot. A higher number of offensive articles means more red while more defensive articles means more blue. It has no real purpose, I just thought it was a cool idea.
+The small red, blue, or purple dot (lambda) ajacent to the title is calculated by the following Python program. It counts the number of posts with red (offensive/attacker) and blue (defensive/defender) tags. The respective tag percentages are then used to calculate an RGB value for the dot. A higher number of offensive articles means more red while more defensive articles means more blue. It has no real purpose, I thought it was a cool idea.
 
 ```python
 import pathlib

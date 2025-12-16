@@ -5,6 +5,7 @@ const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const interlinker = require("@photogabble/eleventy-plugin-interlinker");
 
 // export statement
 module.exports = function (eleventyConfig) {
@@ -81,11 +82,15 @@ module.exports = function (eleventyConfig) {
         return [...tagsSet].sort();
     });
 
-    // passthrough copy for favicons
+    // favicons
     eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "favicons" });
     eleventyConfig.addPassthroughCopy({ "src/_includes/favicons/favicon.ico": "favicon.ico" });
 
-    // build io directories
+    // do wikilinks
+    // https://github.com/photogabble/eleventy-plugin-interlinker
+    eleventyConfig.addPlugin(interlinker);
+
+    // output dir
     return {
         dir: {
             input: "src",

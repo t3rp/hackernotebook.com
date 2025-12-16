@@ -3,9 +3,11 @@ layout: layouts/base.njk
 # https://www.11ty.dev/docs/quicktips/tag-pages/
 ---
 
+<!-- title -->
 <h1>{{ title }}</h1>
+<!-- metadata -->
 <ul class="post-metadata">
-  <li>Posted on <time datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time> by {{ metadata.author.name }}</li>
+  <li>Posted on <time datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time> by <a href="/pages/about/">{{ metadata.author.name }}</a></li>
   <li> 
     {%- for tag in tags | filterTagList %}
     {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
@@ -13,8 +15,9 @@ layout: layouts/base.njk
 	{%- endfor %}
   </li>
 </ul>
-
+<!-- article -->
 <article>
+  <!-- content -->
   {{ content | safe }}
   {%- if collections.posts %}
   {%- set previousPost = collections.posts | getPreviousCollectionItem %}
@@ -26,4 +29,15 @@ layout: layouts/base.njk
     </ul>
   {%- endif %}
   {%- endif %}
+  <!-- backlinks -->
+  {% if backlinks.length > 0 %}
+    <nav>
+        <h1>Backlinks</h1>
+        <ul>
+            {% for link in backlinks %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+  {% endif %}
 </article>
