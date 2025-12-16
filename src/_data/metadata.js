@@ -3,10 +3,10 @@ module.exports = {
     url: "https://hackernotebook.com",
     language: "en",
     favicon: "/favicons/favicon.ico",
-    description: "Verum ipsum factum - the true is the made",
+    description: "Verum ipsum factum",
     author: {
         name: "terp",
         url: "https://hackernotebook.com",
-        email: "none@hackernotebook.com"
+        email: "spam@hackernotebook.com"
     }
 }

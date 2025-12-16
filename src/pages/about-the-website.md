@@ -1,0 +1,7 @@
+---
+title: About the Website
+---
+
+This website is powered by [11ty/Eleventy](https://www.11ty.dev/). 11ty is a [static site generator](https://jamstack.org/generators/) written in JavaScript that converts Markdown (and other formats) into the HTML you see here. I followed [this setup guide](https://www.11ty.dev/docs/), and hosted the content with [Cloudflare pages](https://pages.cloudflare.com/). GitHub actions and Cloudflare pages handle the page builds. I followed [this Cloudflare pages guide](https://developers.cloudflare.com/pages/framework-guides/deploy-an-eleventy-site/) to allow Cloudflare to pull and build from my GitHub repository. [Unami]("https://umami.is/") appears to be a nice open source alternative to Google Analytics.
+
+The lambda because it looks cool, half-life, and I've used the symbol in my terminal prompts for a long time. It changes colors based on a [[tiny-red-dot|python script]]. The title bar is inspired by a terminal with the present working directory serving as a breadcrumb navigation of sorts. I've kept things small and simple where possible. It is my goal to keep the website < 14kB. Motivated by [Why your website should be under 14kB in size](https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/).
