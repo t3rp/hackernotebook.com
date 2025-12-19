@@ -6,9 +6,10 @@
   --text-code-inline: #fff;
   --text-secondary: #000;
   --link: #000;
+  --link-hover: #000;
   --border: #000;
   --code-bg: #000;
-  --link-visited: #551A8B;
+  --link-visited: #800080;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,11 +17,12 @@
     --bg: #000;
     --text: #fff;
     --text-code-inline: #000;
-    --text-secondary: #fff;
+    --text-secondary: #ffffff;
     --link: #fff;
+    --link-hover: #fff;
     --border: #fff;
     --code-bg: #fff;
-    --link-visited: #CfA5FF;
+    --link-visited: #9e4e9e;
   }
 }
 
@@ -45,7 +47,7 @@ body {
 
 body > * {
   --layout-spacing: max(2vh, 2rem);
-  --max-width: 100ch;
+  --max-width: 80ch;
   width: min(100%, var(--max-width));
   margin-left: auto;
   margin-right: auto;
@@ -59,16 +61,16 @@ main > * + * {
   margin-top: var(--layout-spacing);
 }
 
+/* Breadcrumb, and main title */
+
 header h1 {
   text-transform: lowercase;
-  font-size: 3rem;
+  font-size: 2rem;
   overflow-wrap: break-word;
   /* font-family: monospace; */
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   color: var(--text);
 }
 
@@ -114,6 +116,11 @@ body > footer div p {
 
 /* Article */
 
+article {
+  --heading-base: 2rem;
+  --heading-step: 0.25rem;
+}
+
 article * + * {
   margin-top: 1rem;
 }
@@ -121,6 +128,37 @@ article * + * {
 article p {
   line-height: 2.5rem;
 }
+
+/* Markdown design */
+
+article :is(h1, h2, h3, h4, h5, h6)::before {
+  display: inline-flex;
+  align-items: center;
+  content: "";
+  color: var(--text-secondary);
+  font-weight: 700;
+  margin-right: 0.5rem;
+  font-size: 0.85em;
+  transform: translateY(-0.08em);
+  vertical-align: middle;
+}
+
+/* Nest them */
+
+article h1::before { content: "#"; }
+article h2::before { content: "##"; }
+article h3::before { content: "###"; }
+article h4::before { content: "####"; }
+article h5::before { content: "#####"; }
+
+/* Heading sizes */
+
+article h1 { font-size: var(--heading-base); }
+article h2 { font-size: calc(var(--heading-base) - 1 * var(--heading-step)); }
+article h3 { font-size: calc(var(--heading-base) - 2 * var(--heading-step)); }
+article h4 { font-size: calc(var(--heading-base) - 3 * var(--heading-step)); }
+article h5 { font-size: calc(var(--heading-base) - 4 * var(--heading-step)); }
+article h6 { font-size: calc(var(--heading-base) - 5 * var(--heading-step)); }
 
 /* Header Path Links */
 /* user@blogname:/path/here$ */
@@ -147,37 +185,6 @@ article p {
   51%, 100% { opacity: 0; }
 }
 
-/* Typography */
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-/* Typography Spacing */
-
-:is(h1, h2, h3, h4, h5, h6) {
-  line-height: 1em;
-  text-transform: capitalize;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 /* Horizontal Rulers */
 
 hr {
@@ -191,6 +198,7 @@ hr {
 
 hr::after {
   background: var(--bg);
+  color: var(--text);
   content: 'λ';
   padding: 0 4px;
   position: relative;
@@ -226,7 +234,7 @@ article a:hover,
 article a:focus,
 footer a:hover,
 footer a:focus {
-  color: var(--text);
+  color: var(--link-hover);
 }
 
 article a:hover::after,
@@ -243,7 +251,7 @@ a:visited {
 header a:visited,
 footer a:visited,
 .header-path a:visited {
-  color: inherit;
+  color: var(--text);
 }
 
 /* Images */
@@ -254,7 +262,7 @@ article img {
   object-fit: cover;
   margin: 2rem auto;
   border-radius: .6rem;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 @supports (aspect-ratio: 1) {
@@ -287,7 +295,7 @@ blockquote {
 
 .links-nextprev {
   list-style: none;
-  padding: 1rem 0;
+  padding: 0;
 }
 
 /* Metadata */
@@ -315,4 +323,16 @@ blockquote {
   color: var(--text-code-inline);
   padding: 0.2rem 0.4rem;
   border-radius: 0.3rem;
+}
+
+/* Post List from index.html/home */
+
+.post-list {
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  padding-bottom: .5rem;
+  list-style: none;
 }
