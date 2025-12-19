@@ -19,7 +19,18 @@ layout: layouts/base.njk
 <article>
   <!-- content -->
   {{ content | safe }}
+  <!-- backlinks -->
+  {% if backlinks.length > 0 %}
+        <h1>Backlinks</h1>
+        <ul>
+            {% for link in backlinks %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+  {% endif %}
+  <!-- next and previous post -->
   {%- if collections.posts %}
+  <h1>Continue</h1>
   {%- set previousPost = collections.posts | getPreviousCollectionItem %}
   {%- set nextPost = collections.posts | getNextCollectionItem %}
   {%- if nextPost or previousPost %}
@@ -29,15 +40,4 @@ layout: layouts/base.njk
     </ul>
   {%- endif %}
   {%- endif %}
-  <!-- backlinks -->
-  {% if backlinks.length > 0 %}
-    <nav>
-        <h1>Backlinks</h1>
-        <ul>
-            {% for link in backlinks %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
-  {% endif %}
 </article>

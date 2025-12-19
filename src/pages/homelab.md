@@ -29,6 +29,10 @@ I do most of my work on this machine in addition to hosting several [Podman](htt
 
 ![Workstation](/assets/img/ares_neofetch.png)
 
+### Random test
+
+Here is the subheading #3.
+
 ## Laptop
 
 I snagged an XPS 13 Plus refurbished from Micro Center in preparation for [SANS SEC617](https://www.sans.org/cyber-security-courses/wireless-penetration-testing-ethical-hacking/). I've since replaced the hard drive with a Samsung 980 professional, re-pasted with [Thermal Grizzly Kryonaut](https://www.thermal-grizzly.com/en/kryonaut/s-tg-k-001-rs), and added a cheap matte screen protector. Currently running Ubuntu.

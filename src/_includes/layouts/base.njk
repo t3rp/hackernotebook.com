@@ -2,7 +2,7 @@
 <html lang="en">
 {% include "ascii.txt" %}
 <head>
-    <!-- Meta Data --> 
+    <!-- Metadata --> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ description or metadata.description }}">
@@ -14,7 +14,7 @@
     {% endset %}
     <style>{{ css | cssmin | safe }}</style>
     <title>{{ title or metadata.title }} | {{ metadata.siteName }}</title>
-    <!-- Unami Analytics -->
+    <!-- Unami -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="b259cd2c-e02b-472f-b817-ab77f4f2d8b4"></script>
 </head>
 <body>
@@ -39,7 +39,7 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-            #<span class="blinking-cursor">█</span>
+            $<span class="blinking-cursor">█</span>
         </h1>
     </header>
     <main>
@@ -52,7 +52,7 @@
         {% include "layouts/footer.njk" %}
     </footer>
 <!-- Current page: {{ page.url }} -->
-{# Debug output: #}
-<!-- path: {{ path }} -->
+<!-- Path: {{ path }} -->
+<!-- {# Debug output: #} -->
 </body>
 </html>
