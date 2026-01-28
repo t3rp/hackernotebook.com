@@ -39,6 +39,6 @@ Disallow: /
 User-agent: ia_archiver
 Disallow: /
 
-# Allow everything else
+# Allow
 User-agent: *
 Allow: /
