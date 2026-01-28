@@ -1,5 +1,5 @@
 ---
-title: About the Website
+title: Website
 ---
 
 This website is powered by [11ty/Eleventy](https://www.11ty.dev/). 11ty is a [static site generator](https://jamstack.org/generators/) written in JavaScript that converts Markdown (and other formats) into the HTML you see here. I followed [this setup guide](https://www.11ty.dev/docs/), and hosted the content with [Cloudflare pages](https://pages.cloudflare.com/). GitHub actions and Cloudflare pages handle the page builds. I followed [this Cloudflare pages guide](https://developers.cloudflare.com/pages/framework-guides/deploy-an-eleventy-site/) to allow Cloudflare to pull and build from my GitHub repository. [Unami]("https://umami.is/") appears to be a nice open source alternative to Google Analytics.

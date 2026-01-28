@@ -1,8 +1,8 @@
 ---
-title: About the Author
+title: About
 ---
 
-This website is a place for me to share tips/tricks and other things I find interesting. My primary professional focus is offensive security so I imagine that's mostly what I'll write about. My day job is a mix of penetration testing and running a business. Here's more information [[about-the-website|about the website]]  and my current [[homelab|homelab setup]].
+This website is a place for me to share tips/tricks and other things I find interesting. My primary professional focus is offensive security so I imagine that's mostly what I'll write about. My day job is a mix of penetration testing and running a business. Here's more information about the [[website]] and my current [[homelab]].
 
 # The Hacker Ethic
 
