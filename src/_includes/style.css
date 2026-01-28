@@ -129,27 +129,20 @@ article p {
   line-height: 2.5rem;
 }
 
-/* Markdown design */
+/* Article Headings  */
 
-article :is(h1, h2, h3, h4, h5, h6)::before {
-  display: inline-flex;
-  align-items: center;
-  content: "";
-  color: var(--text-secondary);
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
   font-weight: 700;
-  margin-right: 0.5rem;
-  font-size: 0.85em;
-  transform: translateY(-0.08em);
-  vertical-align: middle;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text);
 }
-
-/* Nest them */
-
-article h1::before { content: "#"; }
-article h2::before { content: "##"; }
-article h3::before { content: "###"; }
-article h4::before { content: "####"; }
-article h5::before { content: "#####"; }
 
 /* Heading sizes */
 
@@ -199,7 +192,7 @@ hr {
 hr::after {
   background: var(--bg);
   color: var(--text);
-  content: 'λ';
+  content: '⨯';
   padding: 0 4px;
   position: relative;
   top: -13px;
@@ -295,7 +288,7 @@ blockquote {
 
 .links-nextprev {
   list-style: none;
-  padding: 0;
+  padding: .5rem 0 0 0;
 }
 
 /* Metadata */
@@ -335,4 +328,10 @@ blockquote {
 .post-list li {
   padding-bottom: .5rem;
   list-style: none;
+}
+
+/* List */
+
+ul {
+  padding-left: 1rem;
 }
