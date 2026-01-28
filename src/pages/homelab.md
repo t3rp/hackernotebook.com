@@ -2,7 +2,7 @@
 title: Homelab
 ---
 
-Inspiration for this page came from Mike Sass at [Shellsharks](https://shellsharks.com/uses).
+Inspiration for this page came from Mike Sass at [Shellsharks](https://shellsharks.com/uses). If you want to feel inspired (or depressed) don't forget to check out [r/homelab](https://www.reddit.com/r/homelab/).
 
 # Desk setup
 
@@ -21,26 +21,36 @@ Inspiration for this page came from Mike Sass at [Shellsharks](https://shellshar
 
 ---
 
-# Workstation
+# Primary Workstation
+
+I've consolidated my old servers into a single more powerful workstation. It has enough resources to run all of my VMs, including [Game of Active Directory](https://github.com/Orange-Cyberdefense/GOAD).
 
 ![A3 build on DEFCON flag](/assets/img/ares_defcon.png)
-![A3 build on DEFCON flag](/assets/img/ares_neofetch.png)
 
-I do most of my work on this machine in addition to hosting several [Podman](https://podman.io/) containers. With NixOS and Podman I can create containers for things like Ollama and Open WebUI and pass the Nvidia GPU to the container. I have some templates on [GitHub Hacklab](https://github.com/t3rp/hacklab). 
+I also host my [Podman](https://podman.io/) containers on this machine. With NixOS and Podman I can easily containerize things like Ollama, Open WebUI, and n8n with Nvidia GPU pass-through. I have some simple Podman templates on [GitHub Hacklab](https://github.com/t3rp/hacklab) if you would like to replicate the setup. If you converted my 401k to RAM it would look like this:
 
----
+![A3 build RAM](/assets/img/ares_ram_cpu.png)
 
-# Laptops
+- AMD Ryzen 9 7950x
+- Nvidia RTX 3090
+- 128GB DDR5 (before the price hike!)
+- Lian Li A3 Case
+- IceGiant ProSiphon Elite cooler
+- Seasonic Prime Ultra Platinum 850W PSU
+
+# Laptops, XPS and MBP
 
 ![Rack with laptops](/assets/img/rack_laptops.png)
 
-I snagged an XPS 13 Plus refurbished from Micro Center in preparation for [SANS SEC617](https://www.sans.org/cyber-security-courses/wireless-penetration-testing-ethical-hacking/). I've since replaced the hard drive with a Samsung 980 professional, re-pasted with [Thermal Grizzly Kryonaut](https://www.thermal-grizzly.com/en/kryonaut/s-tg-k-001-rs), and added a cheap matte screen protector. Currently running Ubuntu.
+I snagged an XPS 13 Plus (the smaller laptop above) refurbished from Micro Center in preparation for the [SANS SEC617](https://www.sans.org/cyber-security-courses/wireless-penetration-testing-ethical-hacking/) offensive wireless course. I replaced the hard drive with a Samsung 980 professional, re-pasted with [Thermal Grizzly Kryonaut](https://www.thermal-grizzly.com/en/kryonaut/s-tg-k-001-rs), and added a cheap matte screen protector. Currently running Ubuntu.
+
+![Wireless gear](/assets/img/wifi_gear.png)
 
 This is the second 'Linux Certified' Dell that I've purchased and my overall experience is positive. Everything works out of the box on Ubuntu, e.g. sound, wifi, touch, haptic row, and fingerprint).
 
 ![Macbook Pro with SANS coins](/assets/img/macbook_sanscoins.png)
 
-I also use a MacBook Pro M1 Pro (wow that's a name). It is easily the best laptop I've ever owned. I'm not a fan of MacOS but the new Apple silicon hardware is killer.
+I also use a MacBook Pro M1 Pro (wow that's a name). It is easily the best laptop I've ever owned. I'm not a fan of MacOS but the new Apple silicon hardware is killer. It has all of the things a good laptop needs: a solid keyboard, track-pad, battery life, build quality, and screen.
 
 ---
 
@@ -58,11 +68,4 @@ I also use a MacBook Pro M1 Pro (wow that's a name). It is easily the best lapto
 
 # Lab Setup
 
-![Rack circa 2023](/assets/img/lab_rack.png)
-
-My homelab contains two consumer desktops. The Fractal Meshify-C (top) runs [Proxmox](https://www.proxmox.com/en/) and the Rosewill 4U (bottom) runs [TrueNAS SCALE](https://www.truenas.com/truenas-scale/). A Cisco SG350 and [pfSense](https://www.pfsense.org/) are the network's backbone. Lab networking goes through a virtualized [OPNsense](https://opnsense.org/). [PiKVM](https://pikvm.org/) for IPMI. Hardware details:
-
-* Proxmox: 12600K, 32GB, 1TB+2TB NVME, 1080TI
-* TrueNAS: 8700K, 64GB, 1TB+500GB NVME, 4x2TB RAIDZ1
-* Wireless by TPLINK EAP660
-* Cisco SG350 switch
+Checkout past homelabs on [[homelab-history|homelab history]].

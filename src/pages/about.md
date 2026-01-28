@@ -1,16 +1,12 @@
 ---
-title: About
+title: About the Author
 ---
 
-This website is a place for me to share tips/tricks and other things I find interesting. My primary professional focus is offensive security so I imagine that's mostly what I'll write about. My day job is a mix of penetration testing and running a business. Here's more information about the [[website]] and my current [[homelab]].
-
-# The Hacker Ethic
-
-> My professional values draw from the hacker ethic. The hacker ethic is a playful, creative, and can-do approach to solving problems. Hacker culture is the shared beliefs that inform how people, who subscribe to the hacker ethic, interact with eachother. Hacker culture celebrates cleverness, values the pursuit of knowledge, respects intellectual freedom, and rewards sharing knowledge. - Raphael Mudge
+This website is a place to share information I find useful. My day job is a mix of penetration testing and running a business so that's probably what I'll write about. You can read more about how this [[website|website]] was built, read some of my favorite [[hacker-quotes|hacker quotes]], or check out the [[homelab|homelab]].
 
 # Socials
 
-I'm not much for social media. If it's not linked here it's probably not me:
+If it's not linked here it's probably not me:
 
 - [GitHub](https://github.com/t3rp)
 - [LinkedIn](https://www.linkedin.com/in/burnbrian/)
@@ -20,7 +16,7 @@ I'm not much for social media. If it's not linked here it's probably not me:
 
 # Certifications
 
-Most of these were funded by an employer. Listed chronologically, newest to oldest:
+Listed newest to oldest:
 
 * ZPS Certified Red Team Operator (CRTO)
 * GIAC Public Cloud Security (GPCS)
