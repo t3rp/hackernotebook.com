@@ -7,7 +7,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const interlinker = require("@photogabble/eleventy-plugin-interlinker");
 
-// export statement
 module.exports = function (eleventyConfig) {
 
     // image transform
@@ -24,7 +23,7 @@ module.exports = function (eleventyConfig) {
 		},
     });
     
-    // copy assets
+    // copy assets, original formats, not webp
     // eleventyConfig.addPassthroughCopy("src/assets");
 
     // navigation plugin
@@ -40,8 +39,13 @@ module.exports = function (eleventyConfig) {
     
     // filter tag list
     eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "tagList"].indexOf(tag) === -1);
 	});
+
+    // get all collection keys (tag names)
+    eleventyConfig.addFilter("getKeys", function(obj) {
+        return Object.keys(obj);
+    });
 
     // for copyright notice
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
@@ -86,7 +90,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "favicons" });
     eleventyConfig.addPassthroughCopy({ "src/_includes/favicons/favicon.ico": "favicon.ico" });
 
-    // do wikilinks
+    // do wikilinks for Obsidian
     // https://github.com/photogabble/eleventy-plugin-interlinker
     eleventyConfig.addPlugin(interlinker);
 
