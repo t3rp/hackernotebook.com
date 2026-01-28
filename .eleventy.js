@@ -25,6 +25,9 @@ module.exports = function (eleventyConfig) {
     
     // copy assets, original formats, not webp
     // eleventyConfig.addPassthroughCopy("src/assets");
+    
+    // copy robots.txt
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
 
     // navigation plugin
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
