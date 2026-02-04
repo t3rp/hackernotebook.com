@@ -7,7 +7,7 @@ tags:
     - guide
 ---
 
-I purchased a [Synology Rackstation RS1221+](https://www.synology.com/en-us/products/RS1221+) shortly after starting a business because I wanted low/no maintenance network attached storage. I've been happy with TrueNAS in my [[homelab]] for years, but for business critical functions like backups I don't have the time or desire to tinker. The Synology has been a great answer to my low maintenance requirement. My minor complaint after a year with the Rackstation is the noise of the stock fans. I recently had the top off to upgrade RAM/Networking and took the opportunity to slap in a set of Noctuas (Noctua NF-A8 PWM 80mm). Below are a few photos of the fan connections and headers along with Synology DSM settings.
+I purchased a [Synology Rackstation RS1221+](https://www.synology.com/en-us/products/RS1221+) shortly after starting a business because I wanted low/no maintenance network attached storage. I've been happy with TrueNAS in my [[homelab|homelab]] for years, but for business critical functions like backups I don't have the time or desire to tinker. The Synology has been a great answer to the low maintenance requirement. My only minor complaint after a year with the Rackstation is the noise of the stock fans. I recently had the top off to upgrade RAM/Networking and took the opportunity to slap in a set of Noctuas (Noctua NF-A8 PWM 80mm). Below are a few photos of the fan connections and headers along with Synology DSM settings if you want to replicate the swap.
 
 ![Rackstation with original fans](/assets/img/rackstation_original_fans.png)
 
