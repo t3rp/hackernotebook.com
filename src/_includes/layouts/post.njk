@@ -8,12 +8,14 @@ layout: layouts/base.njk
 <!-- metadata -->
 <ul class="post-metadata">
   <li>Posted on <time datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time> by <a href="/pages/about/">{{ metadata.author.name }}</a></li>
+  {% if tags and (tags | filterTagList | length > 0) %}
   <li> 
     {%- for tag in tags | filterTagList %}
     {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
     <a href="{{ tagUrl }}" class="post-tag">#{{ tag }}</a>{%- if not loop.last %}, {% endif %}
-	{%- endfor %}
+    {%- endfor %}
   </li>
+  {% endif %}
 </ul>
 <!-- article -->
 <article>
@@ -33,7 +35,7 @@ layout: layouts/base.njk
   {%- set previousPost = collections.posts | getPreviousCollectionItem %}
   {%- set nextPost = collections.posts | getNextCollectionItem %}
   {%- if nextPost or previousPost %}
-  <h1>Continue</h1>
+  <h1>Continue Reading</h1>
     <ul class="links-nextprev">
 	    {%- if previousPost %}<li>Previous post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 	    {%- if nextPost %}<li>Next post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}

@@ -5,7 +5,7 @@ eleventyNavigation:
   key: Home
 ---
 
-<ul class="post-list retro">
+<ul>
 {% assign latest_posts = collections.posts | reverse %}
 {% for post in latest_posts limit:100 %}
   <li>

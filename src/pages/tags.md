@@ -1,12 +1,5 @@
 ---
-title: All Tags
+title: Tags
 permalink: /tags/index.html
+layout: /layouts/tags.njk
 ---
-
-<ul>
-  {%- for tag in collections.tagList -%}
-    <li>
-      <a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
-    </li>
-  {%- endfor -%}
-</ul>

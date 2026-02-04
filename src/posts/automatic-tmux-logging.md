@@ -5,6 +5,7 @@ tags:
     - quick
     - pentesting
     - red
+    - tool
 ---
 
 When I first started pentesting professionally I used Aaron James' [Intro to Web App Security Testing: Logging](https://trustedsec.com/blog/intro-to-web-app-security-testing-logging) article to setup my terminal logging. I've used that same pipe-pane snippet on every penetration test since. Of course, sometimes I would forget to initiate logging with `PREFIX+h` before running commands. I settled on a more automated solution that uses `set-hook` to grab command output automatically for every new tmux session, window, and pane.
