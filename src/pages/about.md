@@ -18,20 +18,27 @@ If it's not linked here it's probably not me:
 
 # Certifications
 
-Listed newest to oldest:
-
+* HTB Certified Penetration Testing Specialist (CPTS)
+* ZPS Certified Red Team Lead (CRTL)
 * ZPS Certified Red Team Operator (CRTO)
 * GIAC Public Cloud Security (GPCS)
 * GIAC Python Coder (GPYC)
 * GIAC Web Application Penetration Tester (GWAPT)
 * GIAC Penetration Tester (GPEN)
-* HTB Cloud Labs: Hailstorm (AWS), Cyclone (Azure), Blizzard (GCP)
-* HTB Pro Labs: Orion, Genesis, Dante
+* HTB BlackSky Cloud Labs:
+  * Hailstorm (AWS)
+  * Cyclone (Azure)
+  * Blizzard (GCP)
+* HTB Pro Labs:
+  * Zephyr
+  * Orion
+  * Genesis
+  * Dante
 * GIAC Assessing and Auditing Wireless Networks (GAWN)
 * GIAC Certified Incident Handler (GCIH)
 * OffSec Wireless Professional (OSWP)
 * eLearnSecurity Certified Professional Penetration Tester (eCCPTv2)
 * OffSec Certified Professional (OSCP)
-* AWS Certified Solutions Architect Associate (SAA)
-* CompTIA Security+
-* CompTIA Network+
+* ~~AWS Certified Solutions Architect Associate (SAA)~~
+* ~~CompTIA Security+~~
+* ~~CompTIA Network+~~
