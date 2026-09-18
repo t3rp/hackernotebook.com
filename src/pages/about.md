@@ -25,15 +25,8 @@ If it's not linked here it's probably not me:
 * GIAC Python Coder (GPYC)
 * GIAC Web Application Penetration Tester (GWAPT)
 * GIAC Penetration Tester (GPEN)
-* HTB BlackSky Cloud Labs:
-  * Hailstorm (AWS)
-  * Cyclone (Azure)
-  * Blizzard (GCP)
-* HTB Pro Labs:
-  * Zephyr
-  * Orion
-  * Genesis
-  * Dante
+* HTB BlackSky Cloud Labs: Hailstorm (AWS), Cyclone (Azure), Blizzard (GCP)
+* HTB Pro Labs: Zephyr, Orion, Genesis, Dante
 * GIAC Assessing and Auditing Wireless Networks (GAWN)
 * GIAC Certified Incident Handler (GCIH)
 * OffSec Wireless Professional (OSWP)
