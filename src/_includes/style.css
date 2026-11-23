@@ -252,17 +252,10 @@ footer a:visited,
 article img {
   display: block;
   width: 100%;
-  object-fit: cover;
+  height: auto;
   margin: 2rem auto;
   border-radius: .6rem;
   /* filter: grayscale(1); */
-}
-
-@supports (aspect-ratio: 1) {
-  article img {
-    max-height: unset;
-    aspect-ratio: 3/2;
-  }
 }
 
 /* Image Captions */
