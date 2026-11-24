@@ -7,7 +7,7 @@ tags:
     - ai
 ---
 
-I'm asked surprisingly often, even for a nerd, how I've chosen to deploy my AI (SI?!) agents. For the quickest and easiest solution I'm often recommending Docker Sandboxes (SBX). SBX solves many of the major risks associated with running a local development agent with what I would consider minimal headache. I currently use it on NixOS, Linux, and macOS systems (Windows is also supported). The biggest downside in my mind is that the product is closed source and requires registering an account with Docker. If you're okay with that in addition to copy/pasting commands from a stranger online you're in the right place.
+I'm asked surprisingly often, even for a nerd, how I've chosen to deploy my AI (SI?!) agents. For the quickest and easiest solution I recommend Docker Sandboxes (SBX). SBX solves many of the major risks associated with running a local development agent with what I would consider minimal headache. I currently use it on NixOS, Linux, and macOS systems (Windows is also supported). The biggest downside in my mind is that the product is closed source and requires registering an account with Docker. If you're okay with that in addition to copy/pasting commands from a stranger online you're in the right place.
 
 The easiest way to install SBX is with Homebrew, a package manager for macOS. Once we have SBX installed setting up credentials and running your first agent requires only a few more commands. Here are the pastables:
 
