@@ -14,6 +14,11 @@ If it's not linked here it's probably not me:
 - [Tryhackme](https://tryhackme.com/p/t3rp)
 - [Public Keys](https://github.com/t3rp.keys)
 
+# Talks
+
+- [Wi-Fight Club (DEF CON 34)](https://defcon.org/html/defcon-34/dc-34-workshops.html#content_66470)
+- [Wi-Fi-So-Serious (DEF CON 33)](https://defcon.org/html/defcon-33/dc-33-workshops.html#content_60701)
+
 # Certifications
 
 * HTB Certified Offensive AI Expert (COAE)
