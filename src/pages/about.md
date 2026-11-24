@@ -2,9 +2,7 @@
 title: About the Author
 ---
 
-This website is a place to share information I find interesting or useful. My day job is a mix of penetration testing and running a business. 
-
-You can read more about the [[website|website]], read some of my favorite [[hacker-quotes|hacker quotes]], or check out my current [[homelab|homelab]].
+This website is a place to share information I find interesting or useful. My day job is a mix of penetration testing and running a business. You can read more about the [[website|website]], my favorite [[hacker-quotes|hacker quotes]], or check out the current [[homelab|homelab]].
 
 # Socials
 
